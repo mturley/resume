@@ -1,4 +1,7 @@
-% LaTeX resume using res.cls
+% Michael J Turley's Resume
+% Written in LaTeX using the res.cls class from http://www.rpi.edu/dept/arc/training/latex/resumes/
+% Last Updated July 2015
+
 \documentclass[line,margin]{res}
 \topmargin=-0.25in
 \addtolength{\textwidth}{.5in}
@@ -7,61 +10,67 @@
 
 \begin{document}
 
-\title{Michael J Turley Resume}
+\title{Michael J. Turley Resume}
 
 \name{\LARGE Michael J. Turley}
-\address{248 Amherst Road Apt 217, Sunderland, MA 01375}
-\address{781-264-6283  --  mike@miketurley.com -- github.com/mturley}
+\address{837 Partridgeville Road Unit D2, Athol, MA 01331}
+\address{781-264-6283  |  mike@miketurley.com | github.com/mturley}
 
 \begin{resume}
  
 \section{OVERVIEW}
-    Michael is a pragmatic and creative software engineer with experience in web, mobile, and desktop application development as well as systems, graphics, databases, and IT.  He is looking to make a name for himself in the software industry when he graduates in February 2015.
- 
+    Michael is a pragmatic and creative young software engineer with years of experience in web, mobile, and desktop application development, as well as systems architecture, DevOps, QA, graphics, databases, IT and customer service.  He currently works in central Massachusetts and will be looking to move to the Boston/Cambridge area when he is ready to advance his career.
  
 \section{EDUCATION}
-    {\sl Candidate for a Bachelor of Science,} Computer Science \\
-    University of Massachusetts Amherst, 
-    expected February 2015 \\
-    Extra-Curricular Leadership: CS Recruiting and Outreach Committee \\
-    Dean's List Student -- Member, UMass ACM Student Chapter
+    {\sl Bachelor of Science,} Computer Science \hfill Spring 2015 \\
+    University of Massachusetts Amherst \hfill Amherst, MA \\
+    Dean's List Student -- Member: UMass ACM, CS Recruiting and Outreach Committee
 
 % I see that you've decided to look at the source code for my resume.
 % Thanks for your interest!  In the comments below are some additional
 % skills I'm working on adding to my repertoire:
  
 \section{COMPUTER \\ SKILLS}
-    {\sl Languages} \hfill Java, C/C++, JavaScript, Python, Ruby, PHP, HTML5/CSS3 \\
-        % I'm learning: Erlang or Haskell
-    {\sl Client-Side Web Frameworks} \hfill jQuery, Backbone.js, Bootstrap, Handlebars, Meteor \\
-        % I'm learning: AngularJS, Foundation
-    {\sl Web Servers \& Frameworks} \hfill Apache, Nginx, Node.js, Django, Rails, Wordpress, Meteor \\
+    {\sl Languages} \hfill Scala, Java, C/C++, JavaScript, Python, Ruby, PHP, HTML5/CSS3 \\
+        % I'm learning: Erlang, Haskell, and Go
+    {\sl Web Tools (Client)} \hfill Grunt, Bower, AngularJS, jQuery, Backbone.js, Bootstrap, Meteor \\
+        % I'm learning: Foundation
+    {\sl Web Tools (Server)} \hfill Nginx, Play Framework, Akka, Node.js, Rails, Wordpress, Meteor \\
         % I'm learning: GWT
-    {\sl Databases} \hfill MySQL, SQLite, PostgreSQL, MSSQL, MongoDB \\
+    {\sl Databases} \hfill MySQL, SQLite, PostgreSQL, Oracle, MongoDB, Elasticsearch \\
         % I'm learning: CouchDB
-    {\sl Cloud Platforms} \hfill Amazon EC2, Rackspace Cloud, Linode, Heroku, Meteor \\
+    {\sl Infrastructure Tools} \hfill Ansible, Chef, Amazon EC2/S3, DigitalOcean, Linode, Heroku \\
         % I'm learning: Google App Engine
-    {\sl Operating Systems} \hfill UNIX/Linux, Mac OSX, Windows, Android, iOS \\
+    {\sl Operating Systems} \hfill GNU/Linux, Mac OSX, Windows, Android, iOS \\
     {\sl Design Software} \hfill \LaTeX, Photoshop, Illustrator, AfterEffects, Premiere, Maya
         % I'm learning: Blender
  
 \section{EXPERIENCE}
+    {\large \textbf{Hewlett Packard Enterprise}}
+    \hfill Spring 2015 - Present \\
+    Software Engineer, StoreFront Remote team (MSDU - HP Storage)
+    \hfill Littleton, MA
+    \begin{itemize}  \itemsep -2pt % reduce space between items
+        \item Built new features and bug fixes for the Beta release of a highly available web application
+        \item Working heavily at all levels of the stack using Scala, Play, Akka, Javascript and more
+        \item Collaborating and learning with a small Scrum team of HP Engineers and Architects
+    \end{itemize}
+
     {\large \textbf{Amazon Web Services (AWS)}}
     \hfill Summer 2014 \\
     Software Development Engineer Intern, AWS Storage Gateway team
     \hfill Cambridge, MA
     \begin{itemize}  \itemsep -2pt
         \item Developed a new Amazon-internal website for Gateway support using Ruby on Rails
-        \item Improved customer-facing diagnostic and logging tools using Java and bash
-        \item Participated on a Scrum team of 9 Amazon engineers
+        \item Enhanced customer-facing diagnostic and logging tools using Java and bash
     \end{itemize}
     
     {\large \textbf{NimbleBot.com Interactive Software \& Digital Design}}
     \hfill 2011-2013 \\
-    Web Application Developer in Javascript, PHP \& MySQL
+    Contract Web Application Developer in Javascript, PHP \& MySQL
     \hfill Cambridge, MA
     \begin{itemize}  \itemsep -2pt % reduce space between items
-        \item Designed and developed round-trip and live-connected Web apps and REST APIs
+        \item Designed and developed round-trip and real-time web apps and REST APIs
         \item Took a leadership role on a team of 4 developers to build, debug, and deploy
         \item Interfaced with clients and prepared deliverable reports
     \end{itemize}
@@ -71,8 +80,7 @@
     Software Tester \& Frontend Prototype Developer
     \hfill Woodbury, NY
     \begin{itemize}  \itemsep -2pt % reduce space between items
-        \item Tested for regressions in teacher dashboard software
-        \item Built patches for proposed improvements to the UI
+        \item Tested for regressions and built patches for proposed improvements to the UI
     \end{itemize}
 
     {\large \textbf{Depot Street Market}}
@@ -82,14 +90,6 @@
     \begin{itemize}  \itemsep -2pt % reduce space between items
         \item Designed and developed PHP/MySQL apps for managing accounting data
         \item Built custom barcode label management and cash register \& reporting software
-    \end{itemize}
-
-    {\large \textbf{Campus Entertainment, Inc. on behalf of Microsoft}}
-    \hfill Fall 2009 \\
-    Campus Representative for Microsoft at Northeastern University
-    \hfill Boston, MA
-    \begin{itemize}  \itemsep -2pt
-        \item Promoted the Windows 7 launch to students \& faculty
     \end{itemize}
 
     {\large \textbf{ResNet Resource Center at Northeastern University}}
