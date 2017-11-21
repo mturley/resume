@@ -1,25 +1,29 @@
 % Michael J Turley's Resume
 % Written in LaTeX using the res.cls class from http://www.rpi.edu/dept/arc/training/latex/resumes/
-% Last Updated August 2017
+% Last Updated November 2017
 
 \documentclass[line,margin]{res}
 \topmargin=-0.25in
 \addtolength{\textwidth}{.5in}
 \addtolength{\textheight}{.5in}
 \addtolength{\oddsidemargin}{-.25in}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue}
 
 \begin{document}
 
 \title{Michael J. Turley Resume}
 
 \name{\LARGE Michael J. Turley}
-\address{208 Prospect St, Athol, MA 01331}
-\address{781-264-6283  |  mike@miketurley.com | github.com/mturley}
+\address{mike.turley@alum.cs.umass.edu | 781-264-6283 | 208 Prospect St, Athol, MA 01331}
+\address{\href{https://github.com/mturley}{github.com/mturley}
+    | \href{https://twitter.com/mundanedetail}{twitter.com/mundanedetail}
+    | \href{https://www.linkedin.com/in/mturley/}{linkedin.com/in/mturley}}
 
 \begin{resume}
 
 \section{OVERVIEW}
-    Michael is a pragmatic and creative software engineer with over 7 years of experience in web, mobile, and desktop application development, systems architecture, DevOps, QA, graphics, databases, IT and customer service.  He currently works in central Massachusetts.
+    Michael is a pragmatic and creative software engineer with over 7 years of experience in web and mobile application development, systems architecture, DevOps, QA, graphics, databases, and IT. He is building the new open enterprise with the help of Red Hat and the FOSS community.
 
 \section{EDUCATION}
     {\sl Bachelor of Science,} Computer Science \hfill Spring 2015 \\
@@ -46,20 +50,30 @@
         % I'm learning: Blender
 
 \section{EXPERIENCE}
+	{\large \textbf{Red Hat, Inc.}}
+    \hfill November 2017 - Present \\
+    UI Front End Developer, CloudForms/PatternFly (US ENG UXD R\&D)
+    \hfill Westford, MA
+    \begin{itemize}  \itemsep -2pt % reduce space between items
+        \item Developing React components for PatternFly (\href{https://www.patternfly.org/}{patternfly.org})
+        \item Maintaining and Modernizing the UI for ManageIQ (\href{http://manageiq.org/}{manageiq.org})
+        \item Helping to produce Red Hat CloudForms (\href{https://www.redhat.com/en/technologies/management/cloudforms}{redhat.com/cloudforms}) based on ManageIQ
+    \end{itemize}
+
     {\large \textbf{Hewlett Packard Enterprise}}
-    \hfill Spring 2015 - Present \\
+    \hfill February 2015 - November 2017 \\
     Software Engineer, InfoSight / StoreFront Remote (HPE Storage Analytics)
     \hfill Andover, MA
     \begin{itemize}  \itemsep -2pt % reduce space between items
-        \item Built and maintained many advanced high-profile features for a highly available webapp
+        \item Built and maintained many high-profile features for HPE InfoSight (\href{https://infosight.hpe.com/}{infosight.hpe.com})
         \item Worked heavily at all levels of the stack using JavaScript, Scala, Play, Akka and more
-        \item Collaborated with and learned from a small Scrum team of HP Engineers and Architects
+        \item Collaborated with and learned from a small Scrum team of HP engineers and architects
         \item Contributed heavily to a major UI integration upon HPE's aquisition of Nimble Storage
     \end{itemize}
 
     {\large \textbf{Amazon Web Services (AWS)}}
     \hfill Summer 2014 \\
-    Software Development Engineer Intern, AWS Storage Gateway team
+    SDE Intern, AWS Storage Gateway (\href{https://aws.amazon.com/storagegateway/}{aws.amazon.com/storagegateway})
     \hfill Cambridge, MA
     \begin{itemize}  \itemsep -2pt
         \item Developed a new Amazon-internal website for Gateway support using Ruby on Rails
@@ -84,27 +98,17 @@
         \item Tested for regressions and built patches for proposed improvements to the UI
     \end{itemize}
 
-    {\large \textbf{Depot Street Market}}
-    \hfill 2010-Present \\
-    Business Software Developer \& Database Administrator
-    \hfill Duxbury, MA {\footnotesize (Telecommute)}
-    \begin{itemize}  \itemsep -2pt % reduce space between items
-        \item Designed and developed PHP/MySQL apps for managing accounting data
-        \item Built custom barcode label management and cash register \& reporting software
-    \end{itemize}
-
     {\large \textbf{ResNet Resource Center at Northeastern University}}
     \hfill 2008-2009 \\
     PC Repair Technician \& Service Tool Developer
     \hfill Boston, MA
     \begin{itemize}  \itemsep -2pt % reduce space between items
         \item Collaborated with a team of technicians on service-related projects and tools
-        \item Provided customer service and tech support for students \& faculty
     \end{itemize}
 
 \section{INTERESTS}
     Hobby programming projects, experimenting with new languages and platforms \\
-    Music composition and performance on piano, bass, guitar, and voice \\
+    Music composition and performance on bass/vocals (\href{https://www.facebook.com/NonZeroChance}{facebook.com/NonZeroChance}) and piano \\
     Skiing, snowboarding, hiking, swimming, and running
 
 \end{resume}
