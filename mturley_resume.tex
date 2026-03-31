@@ -1,6 +1,6 @@
 % Michael J Turley's Resume
 % Written in LaTeX using the res.cls class from http://www.rpi.edu/dept/arc/training/latex/resumes/
-% Last Updated November 2017
+% Last Updated March 2026
 
 \documentclass[line,margin]{res}
 \topmargin=-0.25in
@@ -15,72 +15,69 @@
 \title{Michael J. Turley Resume}
 
 \name{\LARGE Michael J. Turley}
-\address{mike@turley.me | 781-264-6283 | Hudson, MA 01749}
+\address{mike@turley.me | (781) 264-6283 | Hudson, MA 01749}
 \address{\href{https://github.com/mturley}{github.com/mturley}
     | \href{https://www.linkedin.com/in/mturley/}{linkedin.com/in/mturley}}
 
 \begin{resume}
 
 \section{OVERVIEW}
-    Senior Software Engineer at Red Hat with over 11 years of experience in enterprise frontend web development. 8 years of experience as a team lead.
+    {\large \textbf{Senior Software Engineer at Red Hat with over 11 years of experience leading teams in enterprise web development (primarily front-end).}}
 
-% I see that you've decided to look at the source code for my resume.
-% Thanks for your interest!  In the comments below are some additional
-% skills I'm working on adding to my repertoire:
+\section{SKILLS}
+    {\sl Languages} \hfill TypeScript, JavaScript, HTML/CSS, Go, Python, PHP, Scala, Java, Ruby \\
+    {\sl Frontend Libraries} \hfill React, Redux, React Query, tRPC, Next.js, Tailwind, Angular, jQuery \\
+    {\sl AI Tools} \hfill Claude Code, Cursor, Copilot, spec-kit, Coderabbit, MCP Servers \\
+    {\sl Frontend Testing Tools} \hfill Jest, Cypress, React Test Framework, MSW, Puppeteer, Selenium \\
+    {\sl Servers/Frameworks} \hfill Node.js, Express, Gin, Nginx, Play Framework, Rails, Wordpress \\
+    {\sl Databases} \hfill MySQL, SQLite, Postgres, MongoDB, Elasticsearch \\
+    {\sl Infrastructure Tools} \hfill GitHub Actions, Jenkins, Ansible, Vercel, Amazon EC2/S3 \\
+    {\sl Design Software} \hfill Figma, Sketch, Balsamiq, Photoshop, Illustrator
 
-\section{COMPUTER \\ SKILLS}
-    {\sl Languages} \hfill Scala, Java, C/C++, JavaScript, Python, Ruby, PHP, HTML5/CSS3 \\
-        % I'm learning: Erlang, Haskell, and Go
-    {\sl Web Tools (Client)} \hfill NPM, Webpack, Gulp, Bower, React, Angular, jQuery, Meteor \\
-        % I'm learning: Foundation
-    {\sl Web Tools (Server)} \hfill Nginx, Play Framework, Akka, Node.js, Rails, Wordpress, Meteor \\
-        % I'm learning: Lagom, Spark
-    {\sl Databases} \hfill MySQL/SQLite/Postgres, MongoDB, Elasticsearch, Vertica, DynamoDB \\
-        % I'm learning: Redis, Memcached
-    {\sl Infrastructure Tools} \hfill Jenkins, Ansible, Chef, Amazon EC2/S3, DigitalOcean, Linode, Heroku \\
-        % I'm learning: ConductR, Google App Engine
-    {\sl Operating Systems} \hfill GNU/Linux, Mac OS X, Windows, Android, iOS \\
-    {\sl Design Software} \hfill \LaTeX, Photoshop, Illustrator, AfterEffects, Premiere, Maya
-        % I'm learning: Blender
-
-\section{EXPERIENCE}
+\section{WORK EXPERIENCE}
 	{\large \textbf{Red Hat, Inc.}}
-    \hfill November 2017 - Present \\
-    UI Front End Developer, CloudForms/PatternFly (US ENG UXD R\&D)
-    \hfill Westford, MA
+    \hfill Nov 2017 - Present \\
+    Senior UI Front End Developer (OpenShift AI, Migration Toolkit, UXD)
+    \hfill Lowell, MA
     \begin{itemize}  \itemsep -2pt % reduce space between items
-        \item Developing React components for PatternFly (\href{https://www.patternfly.org/}{patternfly.org})
-        \item Maintaining and Modernizing the UI for ManageIQ (\href{http://manageiq.org/}{manageiq.org})
-        \item Helping to produce Red Hat CloudForms (\href{https://www.redhat.com/en/technologies/management/cloudforms}{redhat.com/cloudforms}) based on ManageIQ
+        \item Leading one of 5 scrum teams (a team of 7) for the \href{Red Hat OpenShift AI}{https://www.redhat.com/en/products/ai/openshift-ai} Dashboard, a data science and AI experimentation platform for hybrid clouds used worldwide by large corporations
+        \item #15 open source contributor to \href{https://github.com/kubeflow/model-registry/graphs/contributors?selectedMetric=commits}{Kubeflow Model Registry}, a CNCF project adopted by teams at AWS, AT&T, VMware, Pepsico and others and integrated with RHOAI (\href{https://www.kubeflow.org/}{kubeflow.org})
+        \item #11 open source contributor to \href{https://github.com/opendatahub-io/odh-dashboard}{Open Data Hub}, the upstream for RHOAI (\href{https://opendatahub.io/}{opendatahub.io})
+        \item Owned architecture and delivery of new modular UIs for Model Registry, Model Catalog, and Distributed Workloads areas of OpenShift AI using React, Webpack Federated Modules and a Golang/Gin BFF integrated with REST APIs
+        \item Built an internal dashboard to combine status and history data across Jira, GitHub and Slack using Claude and spec-kit. Streamlines team communication, code reviews and knowledge sharing
+        \item Architected and led a greenfield UI for \href{https://developers.redhat.com/products/mtv#massmigrationofvirtualmachines9352}{Migration Toolkit for Virtualization} using React Query, Node.js and Express. Used by large customers to migrate from VMWare to open-source OpenShift Virtualization and escape vendor lock-in
+        \item Maintained multiple UIs for \href{https://konveyor.io/}{Konveyor.io}, productized as \href{https://developers.redhat.com/products/mta}{Migration Toolkit for Applications} and \href{https://catalog.redhat.com/en/software/container-stacks/detail/5ec53fffef29fd35586d9a5a}{Migration Toolkit for Containers}
+        \item Maintained React components for PatternFly (\href{https://www.patternfly.org/}{patternfly.org}) on the UXD team
+        \item Mentored interns and junior developers and developed team onboarding resources
     \end{itemize}
 
     {\large \textbf{Hewlett Packard Enterprise}}
-    \hfill February 2015 - November 2017 \\
+    \hfill Feb 2015 - Nov 2017 \\
     Software Engineer, InfoSight / StoreFront Remote (HPE Storage Analytics)
     \hfill Andover, MA
     \begin{itemize}  \itemsep -2pt % reduce space between items
-        \item Built and maintained many high-profile features for HPE InfoSight (\href{https://infosight.hpe.com/}{infosight.hpe.com})
-        \item Worked heavily at all levels of the stack using JavaScript, Scala, Play, Akka and more
+        \item Built and maintained many high-profile features for HPE InfoSight (now branded \href{https://www.hpe.com/us/en/storage/aiops.html}{HPE AIOps})) including data visualizations, alert systems and access management.
+        \item Worked heavily at all levels of the stack using JavaScript (jQuery and React), Scala, Play, Akka and more
         \item Collaborated with and learned from a small Scrum team of HP engineers and architects
-        \item Contributed heavily to a major UI integration upon HPE's aquisition of Nimble Storage
+        \item Contributed to a major UI integration upon HPE's aquisition of Nimble Storage
     \end{itemize}
 
-    {\large \textbf{Amazon Web Services (AWS)}}
+    {\large \textbf{Amazon.com, Inc.}}
     \hfill Summer 2014 \\
     SDE Intern, AWS Storage Gateway (\href{https://aws.amazon.com/storagegateway/}{aws.amazon.com/storagegateway})
     \hfill Cambridge, MA
     \begin{itemize}  \itemsep -2pt
-        \item Developed a new Amazon-internal website for Gateway support using Ruby on Rails
+        \item Developed a new Amazon-internal website for Gateway support using Ruby on Rails and jQuery
         \item Enhanced customer-facing diagnostic and logging tools using Java and Bash
     \end{itemize}
 
     {\large \textbf{NimbleBot.com Interactive Software \& Digital Design}}
     \hfill 2011-2013 \\
-    Contract Web Application Developer in Javascript, PHP \& MySQL
+    Contract Web Application Developer in JavaScript, PHP \& MySQL
     \hfill Cambridge, MA
     \begin{itemize}  \itemsep -2pt % reduce space between items
-        \item Designed and developed round-trip and real-time web apps and REST APIs
-        \item Took a leadership role on a team of 4 developers to build, debug, and deploy
+        \item Designed and developed round-trip and real-time websites and webapps including a textbook companion app for McGraw Hill 
+        \item Led projects on a team of 4 developers
         \item Interfaced with clients and prepared deliverable reports
     \end{itemize}
 
@@ -92,14 +89,6 @@
         \item Tested for regressions and built patches for proposed improvements to the UI
     \end{itemize}
 
-    {\large \textbf{ResNet Resource Center at Northeastern University}}
-    \hfill 2008-2009 \\
-    PC Repair Technician \& Service Tool Developer
-    \hfill Boston, MA
-    \begin{itemize}  \itemsep -2pt % reduce space between items
-        \item Collaborated with a team of technicians on service-related projects and tools
-    \end{itemize}
-
 \section{EDUCATION}
     {\sl Bachelor of Science,} Computer Science \hfill Spring 2015 \\
     University of Massachusetts Amherst \hfill Amherst, MA \\
@@ -107,7 +96,7 @@
 
 \section{INTERESTS}
     Hobby programming projects, experimenting with new languages and platforms \\
-    Music composition and performance on bass/vocals (\href{https://www.facebook.com/NonZeroChance}{facebook.com/NonZeroChance}) and piano \\
+    Music composition and performance on bass, vocals and piano \\
     Skiing, snowboarding, hiking, swimming, and running
 
 \end{resume}
